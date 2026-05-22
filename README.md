@@ -3,8 +3,7 @@
 A pixel-perfect, responsive React implementation of the Reelax checkout/billing page from the Figma design assignment.
 
 ## 🚀 Live Demo
-- **Hosted App:** _(Deploy to Vercel/Netlify and add link here)_
-
+- Hosted App: https://reelax-assignment1.vercel.app
 ## 🛠️ Tech Stack
 | Tool | Purpose |
 |------|---------|
