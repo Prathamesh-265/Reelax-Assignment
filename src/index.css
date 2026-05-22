@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .input-base {
+    @apply w-full border border-neutral-200 rounded-md px-3 py-2.5 text-sm text-neutral-800 placeholder-neutral-400 bg-white outline-none transition-all duration-150;
+  }
+
+  .input-base:focus {
+    @apply border-primary-500;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white text-sm font-semibold px-6 py-2.5 rounded-md transition-colors duration-150 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-700 text-sm font-semibold px-6 py-2.5 rounded-md transition-colors duration-150 cursor-pointer;
+  }
+}
